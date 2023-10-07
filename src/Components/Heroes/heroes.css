@@ -1,0 +1,126 @@
+.container {
+  background: black;
+  width: auto;
+  height: 100vh;
+}
+.chara-box {
+  width: auto;
+  height: 80%;
+  background: rgb(194, 32, 32);
+  position: absolute;
+  top: 15%;
+  left: 5%;
+  right: 5%;
+  border-radius: 30px;
+  padding: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.chara-search {
+  width: 100%;
+  height: 100%;
+  background: white;
+  opacity: 0.9;
+  border-radius: 30px;
+  overflow: scroll;
+}
+.chara-search::-webkit-scrollbar {
+  width: 0.4em;
+}
+
+.chara-search::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+.chara-search::-webkit-scrollbar-thumb {
+  background-color: transparent;
+  border-radius: 10px;
+}
+.chara-search {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* Internet Explorer/Edge */
+}
+
+.chara-search::-webkit-scrollbar {
+  width: 0; /* Chrome, Safari, and Opera */
+}
+
+.chara-search .output {
+  background: grey;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 30px;
+  height: auto;
+  text-align: center;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width:500px ;
+}
+.chara-search .output h1{
+  color: black;
+}
+.grey{
+  display:flex;
+}
+.extra{
+  background: grey;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 30px;
+  height: auto;
+  color: white;
+  width:600px ;
+  position: relative;
+}
+
+
+.chara-search .input {
+  padding: 30px;
+  display: flex;
+  gap: 35px;
+}
+.chara-search input {
+  width: 400px;
+  height: 50px;
+  background: transparent;
+  padding-left: 10px;
+  border: none;
+  border-bottom: 3px solid red;
+  outline: none;
+  cursor: text;
+  font-size: larger;
+  font-weight: bold;
+}
+.chara-search button {
+  width: 80px;
+  height: 50px;
+  border-radius: 10px;
+  background:transparent;
+  font-size: larger;
+  font-weight: bold;
+  color: red;
+  cursor: pointer;
+  outline: none;
+  border: 2px solid red;
+}
+.chara-search button:hover {
+  background-color: red;
+  color: black;
+  border: none;
+}
+.chara-pic {
+  width: auto;
+  height: 100%;
+  border-radius: 30px;
+  margin-right: 40px;
+  margin-left: 70px;
+  display: flex;
+  gap: 70px;
+}
+.chara-pic img {
+  object-fit: contain;
+  border-radius: 30px;
+}
