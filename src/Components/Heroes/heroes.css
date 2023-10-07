@@ -94,7 +94,7 @@
   font-size: larger;
   font-weight: bold;
 }
-.chara-search button {
+.chara-search #button1 {
   width: 80px;
   height: 50px;
   border-radius: 10px;
@@ -106,7 +106,7 @@
   outline: none;
   border: 2px solid red;
 }
-.chara-search button:hover {
+.chara-search #button1:hover {
   background-color: red;
   color: black;
   border: none;
@@ -123,4 +123,14 @@
 .chara-pic img {
   object-fit: contain;
   border-radius: 30px;
+}
+.clear{
+  width: 80px;
+  height: 35px;
+  border-radius: 10px;
+  font-size: larger;
+  font-weight: bold;
+  color: red;
+  cursor: pointer;
+  outline: none; 
 }

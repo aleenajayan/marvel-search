@@ -49,7 +49,7 @@ function Heroes() {
     }
   }, [searchUrl]);
   return (
-    <div className="container" id="heroes">
+    <div className="container" id='search'>
       <div className="chara-box">
         <div className="chara-search">
           <div className="input">
@@ -78,7 +78,7 @@ function Heroes() {
                       ))}
                     </h3>
                   )}
-                  <button onClick={handleClearClick}>Clear</button>
+                  <button onClick={handleClearClick} className='clear'>Clear</button>
                 </div>
                 <div className="extra">
                   {item.powers && (
@@ -119,7 +119,7 @@ function Heroes() {
                   )}
                   {item.aka && (
                     <>
-                      <h3 style={{ color: "red" }}>{item.aka[0]}</h3>
+                      <h3 style={{ color: "black" }}>{item.aka[0]}</h3>
                     </>
                   )}
                 </div>

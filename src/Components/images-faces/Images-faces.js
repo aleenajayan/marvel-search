@@ -187,8 +187,8 @@ function Imagesfaces() {
     },
   ];
   return (
-    <div className="images-face">
-      {characters.map(item=>{
+    <div className="images-face" id="heroes">
+      {characters.map((item) => {
         return (
           <div className="img-card">
             <div className="img-front">
@@ -216,7 +216,6 @@ function Imagesfaces() {
           </div>
         );
       })}
-      
     </div>
   );
 }

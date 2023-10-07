@@ -6,10 +6,8 @@ function Navbar() {
     <div className='header'>
       <img src="./Images/logo.png" alt="logo" className="logo"/>
         <ul className="list">
-            <li><a href="#heroes">Home</a></li>
+            <li><a href="#search">Home</a></li>
             <li><a href="#heroes">Heroes</a></li>
-            <li><a href="#movies">Movies</a></li>
-            <li><a href="#series">Series</a></li>
         </ul>
     </div>
   )
