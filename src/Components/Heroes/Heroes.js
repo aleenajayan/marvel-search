@@ -15,22 +15,25 @@ function Heroes() {
         "marvel-heroic-api-unlock-the-mcu-legendary-characters.p.rapidapi.com",
     },
   });
-  const [state, setState]=useState(false)
+  const [state, setState]=useState()
+
   const handleSearch=async()=>{
    if (input=='') {
     alert("Enter something")
+    setState(true);
    }
    else{
     setSearchUrl({
      ...searchUrl,
      params: { q: input }, 
     });
-    setState(!state);
+    setState(false);
+    console.log(state);
   }
  }
  function handleClearClick(){
    setInput("");
-   setState(!state); 
+   setState(true);
  }
   useEffect(() => {
     const fetchHero = async () => {
@@ -62,6 +65,7 @@ function Heroes() {
             </button>
           </div>
           {searchData.map((item) => {
+             console.log(state);
             return state == false ? (
               <div className="grey">
                 <div className="output">
